@@ -1,32 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { Navbar} from 'react-bootstrap';
-import {Route, Switch} from "react-router";
-import {BrowserRouter as Router} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import LoadingIndicatorComponent from './components/LoadingIndicatorComponent';
+import AppNotificationComponent from './components/AppNotificationComponent';
+import ChooseService from './components/ChooseService';
+
 
 function App() {
   return (
-    <div className="App">
       <div>
-        <Navbar bg="dark" variant="dark">
-          <Navbar.Brand >AR Salon and Day Spa</Navbar.Brand>
-        </Navbar>
+          <LoadingIndicatorComponent></LoadingIndicatorComponent>
+          <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+              <a className="navbar-brand" href="/">Ar Salon & Day Spa</a>
+          </nav>
+          <main role="main" className="container">
+              <div className="padding-container">
+                  <ChooseService></ChooseService>
+              </div>
+          </main>
       </div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
   );
 }
 

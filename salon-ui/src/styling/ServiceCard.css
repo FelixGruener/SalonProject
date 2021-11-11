@@ -1,0 +1,49 @@
+.card {
+    width: 18rem;
+    margin-bottom: 5%;
+    margin-right: 3%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: whitesmoke;
+}
+
+.card-title {
+    margin: 0;
+    height: 50%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: x-large;
+}
+
+h2.card-text {
+    font-size: xx-large;
+}
+
+.card-text {
+    text-align: center;
+    margin: 5%;
+}
+
+button.btn {
+    margin: 0 auto;
+    margin-bottom: 5%;
+    display: block;
+    border-radius: 3px;
+    padding: 3%;
+}
+
+button.btn-outline-secondary {
+    background-color: white;
+    border-color: dodgerblue;
+    color: dodgerblue;
+    font-size: large;
+    font-weight: bold;
+}
+
+button.btn:hover {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    color: white;
+}
